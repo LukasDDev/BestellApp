@@ -1,0 +1,31 @@
+.header {
+  background-color: #726d6d;
+}
+
+.header .navbar {
+  background-color: transparent; /* damit der Header die Farbe "trägt" */
+  padding: 0;
+}
+
+.header-inner {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;   /* anpassen wie du willst */
+  width: auto;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.burger-icon {
+  height: 34px;   /* anpassen */
+  width: auto;
+}
