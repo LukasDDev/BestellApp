@@ -1,7 +1,10 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Header styles */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .header {
   background-color: #e76c1f;
@@ -14,12 +17,11 @@ body {
 }
 
 
-.header .navbar {
+.navbar {
   background-color: transparent;
   padding: 0;
   width: 100%;
 }
-
 
 .header-inner {
   width: 100%;
@@ -29,91 +31,99 @@ body {
 }
 
 
+.container-bootstrap {
+  max-width: 1140px;
+  margin: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+
 .logo {
-    height: 40px;
-    /* anpassen wie du willst */
-    width: auto;
+  height: 60px;
+  width: auto;
 }
 
 .burger-btn {
-    background: none;
-    border: none;
-    padding: 0;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .burger-icon {
-    height: 34px;
-    /* anpassen */
-    width: auto;
+  height: 34px;
+  width: auto;
 }
 
 .main_img {
-    margin-top: -128px;
-    /* Headerhöhe */
+  margin-top: -128px;
 }
-
 
 .main_img img {
-    width: 100%;
-    height: 508px;
-    object-fit: cover;
-    display: block;
-    margin-top: 0;
+  width: 100%;
+  height: 608px;
+  object-fit: cover;
+  display: block;
+  margin-top: 0;
 }
-.restaurant{
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Restaurant name and img style */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.restaurant {
   position: relative;
   background: #fff;
   text-align: center;
-  padding: 44px 0 22px; /* oben Platz wegen Avatar */
+  padding: 44px 0 22px;
 }
 
-/* Avatar: halb auf dem Bild */
-.restaurant-avatar{
+
+.restaurant-avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
 
   border: 13px solid #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 
   position: absolute;
   left: 50%;
-  top: -158px;          /* halb raus */
+  top: -158px;
   transform: translateX(-50%);
   background: #fff;
 }
 
-.restaurant-avatar img{
+.restaurant-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.restaurant-head{
+.restaurant-head {
   display: inline-flex;
   align-items: center;
   gap: 14px;
   margin-top: 32px;
 }
 
-.restaurant-title{
+.restaurant-title {
   margin: 0;
   font-size: 34px;
   font-weight: 800;
   line-height: 1.1;
 }
 
-.title-accent{
+.title-accent {
   color: #e76c1f;
 }
 
-.title-dark{
+.title-dark {
   color: #2b2b2b;
 }
 
-.restaurant-rating{
+.restaurant-rating {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -125,18 +135,73 @@ body {
   color: #2b2b2b;
 }
 
-.restaurant-rating .star{
+.restaurant-rating .star {
   font-size: 14px;
   line-height: 1;
 }
 
-.rating-count{
+.rating-count {
   opacity: 0.75;
 }
 
-.restaurant-desc{
+.restaurant-desc {
   margin: 10px auto 0;
   max-width: 560px;
   font-size: 14px;
   color: #555;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Food Section */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.content-wrapper{
+  display: flex;
+
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.content{
+  width: calc(100% - 308px);
+  border: 4px solid #000000;
+}
+
+.content-header{
+  display: flex;
+  align-items: center;
+  background-color: #e76c1f;
+  height: 64px;
+}
+
+
+.burger-logo{
+  height: 48px;
+  width: auto;
+  margin-left: 102px;
+}
+
+.content-header h2{
+  margin-left: 12px;
+  color: #ffffff;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Basket Section */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.basket-wrapper{
+  width: 308px;
+  flex-grow: 1;
+  border: 4px solid #ff0000;
+}
+
+.basket{
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.37);
+  position: sticky;
+  top: 128px;
 }

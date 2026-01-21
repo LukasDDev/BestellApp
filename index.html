@@ -11,48 +11,89 @@
 </head>
 
 <body>
+
     <header class="header">
         <nav class="navbar">
-            <div class="container header-inner">
+            <div class="container-bootstrap header-inner">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="assets/img/Logo 01.png" alt="Logo">
+                    <img class="logo" src="assets/img/Logo 01.png" alt="Bestell App Logo">
                 </a>
 
-                <button class="burger-btn" type="button" aria-label="Menü öffnen">
+                <button class="burger-btn" aria-label="Menü öffnen">
                     <img class="burger-icon" src="assets/img/burger_menu_white.png" alt="">
                 </button>
             </div>
         </nav>
     </header>
+
     <main>
+
         <div class="main_img">
             <img src="assets/img/burger_main_placeholder.jpg" alt="">
         </div>
+
+        <div>
+            <section class="restaurant">
+                <div class="restaurant-avatar">
+                    <img src="assets/img/logo_burger.png" alt="Burger Haus Logo">
+                </div>
+
+                <div class="restaurant-head">
+                    <h1 class="restaurant-title">
+                        <span class="title-accent">Burger</span><span class="title-dark">Haus</span>
+                    </h1>
+
+                    <div class="restaurant-rating">
+                        <span class="star">★</span>
+                        <span class="rating-value">4,1</span>
+                        <span class="rating-count">(317)</span>
+                    </div>
+                </div>
+
+                <p class="restaurant-desc">
+                    The best of Burgers, Pizza, and Greens, all in one great place.
+                </p>
+            </section>
+        </div>
+
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="content-header">
+                    <img class="burger-logo" src="assets/burger.png" alt="">
+                    <h2>Burgers & Sandwiches</h2>
+                </div>
+
+                <template id="food-template">
+                    <div class="food-card">
+                        <img class="food-img">
+
+                        <div class="food-info">
+                            <h3 class="food-title"></h3>
+                            <p class="food-desc"></p>
+                        </div>
+
+                        <div class="food-right">
+                            <div class="food-price"></div>
+                            <button class="food-btn">Add to basket</button>
+                        </div>
+                    </div>
+                </template>
+
+                <div id="food-list"></div>
+
+            </section>
+
+            <section class="basket-wrapper">
+                <div class="basket">Basket</div>
+            </section>
+        </div>
     </main>
-
-    <section class="restaurant">
-        <div class="restaurant-avatar">
-            <img src="assets/img/logo_burger.png" alt="">
-        </div>
-        <div class="restaurant-head">
-            <h1 class="restaurant-title">
-                <span class="title-accent">Burger</span><span class="title-dark">Hause</span>
-            </h1>
-
-            <div class="restaurant-rating">
-                <span class="star">★</span>
-                <span class="rating-value">4,1</span>
-                <span class="rating-count">(317)</span>
-            </div>
-        </div>
-
-        <p class="restaurant-desc">
-            The best of Burgers, Pizza, and Greens, all in one great place.
-        </p>
-    </section>
-
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./db.js"></script>
     <script src="./app.js"></script>
+
 </body>
+
 
 </html>
